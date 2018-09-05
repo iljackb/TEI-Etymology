@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Master Collection of Encoded Etymological Examples</title>
+            <author>Jack Bowers</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Sources are from original work unless cited. Some examples are modified/updates
+               encodings of examples used in Bowers and Romary (2016).</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <!--  INHERITANCE -->
+         <entry xml:id="perdere-it" xml:lang="it">
+            <form type="lemma">
+               <orth>perdere</orth>
+               <gramGrp>
+                  <pos>verb</pos>
+                  <!-- trans -->
+               </gramGrp>
+            </form>
+            <sense><!-- sense info here --></sense>
+            <etym type="inheritance">
+               <cit type="etymon">
+                  <form>
+                     <orth xml:lang="la">perdere</orth>
+                  </form>
+               </cit>
+            </etym>
+         </entry>
+         <entry xml:id="semper" xml:lang="srd">
+            <form type="lemma">
+               <orth>semper</orth>
+               <gramGrp>
+                  <pos>timeAdverb</pos>
+               </gramGrp>
+            </form>
+            <sense><!-- sense info here --></sense>
+            <etym type="inheritance">
+               <cit type="etymon">
+                  <form>
+                     <orth xml:lang="la">semper</orth>
+                  </form>
+               </cit>
+            </etym>
+         </entry>
+         <!-- Inheritance with (unlabeled) phonological changes-->
+         <entry xml:id="chef" xml:lang="fr">
+            <form type="lemma">
+               <orth>chef</orth>
+               <pron notation="ipa">ʃɛf</pron>
+               <gramGrp>
+                  <pos>noun</pos>
+                  <gen>masc</gen>
+               </gramGrp>
+            </form>
+            <sense><!-- sense info here --></sense>
+            <etym type="inheritance">
+               <cit type="etymon" xml:id="kápŭ" next="#kabu">
+                  <form>
+                     <pron notation="proprietary" xml:lang="la-x-VL">kápŭ</pron>
+                  </form>
+               </cit>
+               <cit type="etymon" xml:id="kabu" prev="#kápŭ">
+                  <!-- (phonetic process: could label in nested desired; e.g. <etym type="intervocalic voicing"> -->
+                  <date notBefore="0350" notAfter="0399"/>
+                  <form>
+                     <pron notation="proprietary">kábu</pron>
+                  </form>
+                  <!-- gallo-latin (no iso code)-->
+               </cit>
+               <cit type="etymon" xml:id="k̯áβo̥" prev="#kabu" next="t̯áβo̥">
+                  <date notBefore="0400" notAfter="0499"/>
+                  <form>
+                     <pron notation="proprietary">k̯áβo̥</pron>
+                  </form>
+                  <!-- late gallo-latin ?/early gallo-romance-->
+               </cit>
+               <cit type="etymon" xml:id="t̯ávo̥" prev="#k̯áβo̥" next="t͡sávo̥">
+                  <date notBefore="0400" notAfter="0499"/>
+                  <form>
+                     <pron notation="proprietary">t̯áβo</pron>
+                  </form>
+                  <!-- late gallo-latin ?/early gallo-romance-->
+               </cit>
+               <cit type="etymon" xml:id="t͡sávo̥" prev="#t̯ávo̥" next="#t͡šíe̥vo̥">
+                  <date notBefore="0400" notAfter="0499"/>
+                  <form>
+                     <pron notation="proprietary">t͡sávo̥</pron>
+                  </form>
+                  <!-- late gallo-latin ?/early gallo-romance-->
+               </cit>
+               <cit type="etymon" xml:id="t͡šíe̥vo̥" prev="#t͡šávo̥" next="#tšíe̥f">
+                  <date notBefore="0450" notAfter="0550"/>
+                  <form>
+                     <pron notation="proprietary">t͡šíe̥vo̥</pron>
+                  </form>
+                  <!-- early gallo romance -->
+               </cit>
+               <cit type="etymon" xml:id="tšíe̥f" prev="t͡šíe̥vo" next="#šye̥f">
+                  <date notBefore="0600" notAfter="0699"/>
+                  <form>
+                     <pron notation="proprietary">tšíe̥f</pron>
+                  </form>
+                  <!-- early gallo romance ?-->
+               </cit>
+               <cit type="etymon" xml:id="šyé̥f" prev="#tšíe̥f" next="#šé̥f">
+                  <date notBefore="0700" notAfter="0799"/>
+                  <form>
+                     <pron notation="proprietary">šyé̥f</pron>
+                  </form>
+                  <!-- early/Proto Old French -->
+               </cit>
+               <cit type="etymon" xml:id="šé̥f" prev="#šyé̥f" next="šę́f">
+                  <date notBefore="1500" notAfter="1650"/>
+                  <form>
+                     <pron notation="proprietary" xml:lang="frm">šé̥f</pron>
+                  </form>
+               </cit>
+               <date notBefore="1500" notAfter="1650"/>
+               <cit type="etymon" xml:id="šę́f" prev="šé̥f">
+                  <form>
+                     <pron notation="proprietary" xml:lang="frm">šę́f</pron>
+                  </form>
+               </cit>
+               <bibl>Laborderie, N. and Thomasset, C. (1994). Précis de phonétique historique.
+                  Paris: Nathan.</bibl>
+            </etym>
+         </entry>
+         <!-- INHERITANCE WITH  MORPHO-SYNTACTIC CHANGES-->
+         <entry xml:id="mare" xml:lang="it">
+            <form type="lemma">
+               <orth>mare</orth>
+               <gramGrp>
+                  <pos>noun</pos>
+                  <gen>masc</gen>
+               </gramGrp>
+            </form>
+            <sense><!-- sense infor here --></sense>
+            <etym type="inheritance">
+               <cit type="etymon">
+                  <form>
+                     <orth xml:lang="la">mare</orth>
+                  </form>
+                  <gramGrp>
+                     <pos>noun</pos>
+                     <gen>neut</gen>
+                     <case>nom</case>
+                     <iType>-i stem</iType>
+                  </gramGrp>
+                  <gloss>sea</gloss>
+               </cit>
+            </etym>
+         </entry>
+         <!-- INHERITANCE WITH  MORPHO-SYNTACTIC CHANGES-->
+         <entry xml:id="nação" xml:lang="pt">
+            <form type="lemma" xml:id="nação-pt-sg">
+               <orth>nação</orth>
+               <pron notation="ipa">nɐ.ˈsɐ̃w̃</pron>
+               <gramGrp>
+                  <pos>noun</pos>
+                  <gen>fem</gen>
+               </gramGrp>
+               <form type="inflected" xml:id="nação-pt-pl">
+                  <orth>nações</orth>
+                  <pron notation="ipa">nɐ.ˈsoj̃s̃</pron>
+                  <gramGrp>
+                     <number>pl</number>
+                  </gramGrp>
+               </form>
+            </form>
+            <sense><!-- sense info here --></sense>
+            <etym type="inheritance">
+               <cit type="etymon" corresp="#nação-pt-sg">
+                  <form>
+                     <orth xml:lang="la-x-VL">nātiōne</orth>
+                  </form>
+                  <!-- "-x-VL" = VULGAR LATIN  (no specific iso 639 code)-->
+                  <form>
+                     <pron notation="ipa" xml:lang="la-x-VL">ˈnaː.tɪ.oːne</pron>
+                  </form>
+                  <gramGrp>
+                     <case>acc</case>
+                     <number>sg</number>
+                     <iType>-i stem</iType>
+                  </gramGrp>
+               </cit>
+               <cit type="etymon" corresp="#nação-pt-pl">
+                  <form>
+                     <orth xml:lang="la-x-VL">nātiōnēs</orth>
+                  </form>
+                  <!-- "-x-VL" = VULGAR LATIN  (no specific iso 639 code)-->
+                  <form>
+                     <pron notation="ipa" xml:lang="la-x-VL">ˈnaː.tɪ.oːnes</pron>
+                  </form>
+                  <gramGrp>
+                     <case>acc</case>
+                     <number>pl</number>
+                     <iType>-i stem</iType>
+                  </gramGrp>
+               </cit>
+               <bibl>Sampson, R. (1999). Nasal Vowel Evolution in Romance. New York: Oxford. </bibl>
+            </etym>
+         </entry>
+         <!-- COMPOUNDING -->
+         <entry xml:lang="de" xml:id="handschuh" type="compound" subtype="endocentric">
+            <form type="lemma">
+               <orth>
+                  <seg xml:id="e1a">hand</seg>
+                  <seg xml:id="e1b">schuh</seg>
+               </orth>
+               <pron notation="ipa">
+                  <seg xml:id="p1a">ˈhant</seg>
+                  <seg xml:id="p1b">ʃuː</seg>
+               </pron>
+               <gramGrp>
+                  <pos>subst.</pos>
+                  <gen>mask.</gen>
+               </gramGrp>
+            </form>
+            <sense corresp="http://dbpedia.org/resource/Handschuh"><!-- sense info here --></sense>
+            <etym type="compounding">
+               <cit type="etymon" corresp="#e1a #p1a">
+                  <form>
+                     <orth xml:lang="de">hand</orth>
+                  </form>
+                  <form>
+                     <pron xml:lang="de" notation="ipa">ˈhant</pron>
+                  </form>
+                  <gloss>hand</gloss>
+               </cit>
+               <etym type="metaphor">
+                  <cit type="etymon" corresp="#e1b #p1b">
+                     <form>
+                        <orth xml:lang="de">schuh</orth>
+                     </form>
+                     <form>
+                        <pron xml:lang="de" notation="ipa">ʃuː</pron>
+                     </form>
+                     <gloss>shoe</gloss>
+                  </cit>
+               </etym>
+            </etym>
+         </entry>
+         <entry xml:id="pampelmoes-nl" xml:lang="nl">
+            <form type="lemma">
+               <orth>pompelmoes</orth>
+            </form>
+            <gramGrp>
+               <pos>noun</pos>
+            </gramGrp>
+            <sense> ... </sense>
+            <etym type="compounding">
+               <cit type="etymon">
+                  <form>
+                     <orth>pompel</orth>
+                  </form>
+                  <gramGrp>
+                     <pos>adjective</pos>
+                  </gramGrp>
+                  <gloss xml:lang="fr">gros, enflé</gloss>
+               </cit>
+               <cit type="etymon">
+                  <form>
+                     <orth>limoes</orth>
+                  </form>
+                  <gramGrp>
+                     <pos>commonNoun</pos>
+                  </gramGrp>
+                  <gloss xml:lang="fr">citron</gloss>
+               </cit>
+               <ref target="#Boulan-König">Boulan, König...</ref>
+            </etym>
+         </entry>
+         <!-- BORROWING -->
+         <!-- Borrowing and Compounding -->
+         <entry xml:id="LE1" xml:lang="fr">
+            <form type="lemma">
+               <orth>pamplemousse</orth>
+               <gramGrp>
+                  <pos>commonNoun</pos>
+               </gramGrp>
+            </form>
+            <sense><!-- sense stuff here --></sense>
+            <etym type="borrowing">
+               <seg type="desc">source</seg>
+               <lang>Dutch</lang>
+               <cit type="etymon" xml:id="L2">
+                  <form>
+                     <orth xml:lang="nl">pompelmoes</orth>
+                  </form>
+                  <gloss xml:lang="la">Citrus maxima</gloss>
+                  <gramGrp>
+                     <pos>commonNoun</pos>
+                     <gen>feminine</gen>
+                  </gramGrp>
+                  <note>probablement d'origine tamoule, De Vries, Nedrl</note>
+                  <ref target="TLF">TLF</ref>
+               </cit>
+               <etym type="compounding">
+                  <cit type="etymon">
+                     <form>
+                        <orth xml:lang="nl">pompel</orth>
+                     </form>
+                     <gramGrp>
+                        <pos>adjective</pos>
+                     </gramGrp>
+                     <gloss>gros, enflé</gloss>
+                  </cit>
+                  <cit type="etymon">
+                     <form>
+                        <orth xml:lang="nl">limoes</orth>
+                     </form>
+                     <gramGrp>
+                        <pos>commonNoun</pos>
+                     </gramGrp>
+                     <gloss>citron</gloss>
+                  </cit>
+                  <ref target="#Boulan-König">Boulan, König...</ref>
+               </etym>
+            </etym>
+         </entry>
+         <entry xml:id="LE1-v2" xml:lang="fr">
+            <form type="lemma">
+               <orth>pamplemousse</orth>
+               <gramGrp>
+                  <pos>commonNoun</pos>
+               </gramGrp>
+            </form>
+            <sense><!-- sense stuff here --></sense>
+            <etym type="borrowing">
+               <seg type="desc">source</seg>
+               <lang>Dutch</lang>
+               <cit type="etymon" xml:lang="nl">
+                  <form>
+                     <orth>pompelmoes</orth>
+                  </form>
+                  <gloss xml:lang="la">Citrus maxima</gloss>
+                  <gramGrp>
+                     <pos>commonNoun</pos>
+                     <gen>feminine</gen>
+                  </gramGrp>
+                  <note>probablement d'origine tamoule, De Vries, Nedrl</note>
+                  <ref target="TLF">TLF</ref>
+               </cit>
+            </etym>
+         </entry>
+         <entry xml:id="weekend" xml:lang="fr">
+            <form type="lemma">
+               <orth>week-end</orth>
+               <gramGrp>
+                  <pos>noun</pos>
+                  <gen>masc</gen>
+               </gramGrp>
+            </form>
+            <sense corresp="http://fr.dbpedia.org/page/Week-end">
+               <def>Le week-end (variante weekend, comme en anglais), issu de l'anglais weekend; ou
+                  la fin de semaine est une période hebdomadaire d’un ou deux jours, généralement le
+                  samedi et le dimanche, pendant laquelle la plupart des gens sont au repos.</def>
+            </sense>
+            <etym type="borrowing">
+               <cit type="etymon">
+                  <form>
+                     <orth>weekend</orth>
+                  </form>
+                  <gramGrp>
+                     <pos>noun</pos>
+                  </gramGrp>
+               </cit>
+            </etym>
+         </entry>
+         <entry xml:id="taxi" xml:lang="jpn">
+            <form type="lemma">&#x2028; <orth type="transliterated" notation="rōmaji"
+               >takushī</orth>&#x2028; <orth notation="katakana">タクシー</orth>
+               <pron notation="ipa">takushi:</pron>
+               <gramGrp>&#x2028; <pos>noun</pos>
+               </gramGrp>
+            </form>
+            <sense corresp="http://dbpedia.org/page/Taxicab">
+               <usg type="dom">transportation</usg>
+            </sense>
+            <etym type="borrowing">
+               <seg type="desc">source</seg>
+               <lang>English</lang>
+               <cit type="etymon">
+                  <form>
+                     <orth corresp="http://en.wiktionary.org/wiki/taxi" xml:lang="en">taxi</orth>
+                  </form>
+                  <form>
+                     <pron notation="ipa" xml:lang="en">ˈtæksi</pron>
+                  </form>
+               </cit>&#x2028; </etym>
+         </entry>
+         <entry xml:id="biryani" xml:lang="en">
+            <form type="lemma">&#x2028; <orth type="transliterated">biryani</orth>
+               <pron notation="xsampa">%bIrI"A:nI</pron>
+               <form type="variant">&#x2028; <orth type="transliterated">biriani</orth>
+               </form>
+               <gramGrp>
+                  <pos>noun</pos>
+               </gramGrp>&#x2028; </form>
+            <sense corresp="http://dbpedia.org/resource/Biryani">
+               <def>any variety of Indian dishes...</def>
+            </sense>
+            <etym type="borrowing">
+               <seg type="desc">from</seg>
+               <lang>Urdu</lang>&#x2028; <oRef xml:lang="ur">بریانی</oRef>
+            </etym>
+         </entry>
+         <!-- SENSE CHANGES  -->
+         <!-- METAPHOR-->
+         <entry xml:lang="mix" xml:id="kidney">
+            <form type="lemma">
+               <orth>ntuchi</orth>
+               <pron notation="ipa">ndú.ʧì</pron>
+               <gramGrp>
+                  <pos>noun</pos>
+               </gramGrp>
+            </form>
+            <sense corresp="http://dbpedia.org/resource/Kidney"><!-- target sense -->
+               <usg type="dom" corresp="http://dbpedia.org/resource/Category:Organs">Organs</usg>
+               <!-- target domain -->
+               <etym type="metaphor">
+                  <cit type="etymon">
+                     <form>
+                        <orth corresp="#bean">ntuchi</orth>
+                     </form>
+                     <form>
+                        <pron notation="ipa" corresp="#bean">ndú.ʧì</pron>
+                     </form>
+                     <usg type="dom" corresp="http://dbpedia.org/resource/Category:Edible_legumes"
+                        >Legume</usg>
+                     <!-- source domain-->
+                     <ref type="sense" corresp="http://dbpedia.org/resource/Bean"/>
+                     <gloss>bean</gloss>
+                  </cit>
+               </etym>
+               <cit type="translation" xml:lang="en">
+                  <quote>kidney</quote>
+               </cit>
+            </sense>
+         </entry>
+         <!-- METAPHOR-->
+         <!-- simple physical shape based metaphor (common in many languages)-->
+         <entry xml:id="body-male-testicles">
+            <form type="lemma">
+               <orth>tivi</orth>
+               <pron notation="ipa">dì.ví</pron>
+               <pron notation="zsampa">d i_F v i_R</pron>
+               <gramGrp>
+                  <pos>concretNoun</pos>
+               </gramGrp>
+            </form>
+            <sense corresp="http://dbpedia.org/resource/Testicles">
+               <usg type="dom" corresp="http://dbpedia.org/ontology/AnatomicalStructure"
+                  >AnatomicalStructure</usg>
+               <usg type="dom"
+                  corresp="http://en.wikipedia.org/wiki/Male_reproductive_system_(human)"
+                  >MaleReproductiveSystem(Human)</usg>
+               <etym type="metaphor">
+                  <cit type="etymon">
+                     <form>
+                        <orth target="#egg">tivi</orth>
+                     </form>
+                     <gloss>egg</gloss>
+                  </cit>
+               </etym>
+               <cit type="translation" xml:lang="en">
+                  <quote>testicles</quote>
+               </cit>
+            </sense>
+         </entry>
+         <!-- metaphor and compounding -->
+         <entry xml:lang="mix" xml:id="body-face-eye" type="compound">
+            <form type="lemma">
+               <orth>
+                  <seg corresp="#bean">ntuchi</seg>
+                  <seg corresp="#body-face">nuu</seg>
+               </orth>
+               <pron notation="ipa">
+                  <seg corresp="#bean">ndùʧí</seg>
+                  <seg corresp="#body-face">nũ̀ũ̀</seg>
+               </pron>
+               <gramGrp>
+                  <pos>concreteNoun</pos>
+               </gramGrp>
+            </form>
+            <sense corresp="http://dbpedia.org/resource/Category:Eye">
+               <usg type="dom" corresp="http://dbpedia.org/ontology/AnatomicalStructure"
+                  >AnatomicalStructure</usg>
+               <etym type="compounding">
+                  <etym type="metaphor">
+                     <cit type="etymon">
+                        <form>
+                           <orth corresp="#bean">ntuchi</orth>
+                        </form>
+                        <gloss>bean</gloss>
+                     </cit>
+                  </etym>
+                  <cit type="etymon">
+                     <form>
+                        <orth corresp="#face">nũ̀ũ̀</orth>
+                     </form>
+                     <gramGrp>
+                        <pos>concreteNoun</pos>
+                     </gramGrp>
+                     <gloss>face</gloss>
+                  </cit>
+               </etym>
+               <cit type="translation" xml:lang="en">
+                  <quote>eye, eyes</quote>
+               </cit>
+            </sense>
+         </entry>
+         <!-- METONYMY -->
+         <entry xml:id="animal-horse">
+            <form type="lemma">
+               <orth>kiti</orth>
+               <pron notation="ipa">kì.t̪í</pron>
+               <gramGrp>
+                  <pos>noun</pos>
+               </gramGrp>
+            </form>
+            <sense corresp="http://dbpedia.org/resource/Horse">
+               <usg type="dom" corresp="http://dbpedia.org/resource/Animal">Animal</usg>
+               <etym type="metonymy">
+                  <date notBefore="1517"/>
+                  <cit type="etymon">
+                     <form>
+                        <orth corresp="#animal">kiti</orth>
+                     </form>
+                     <form>
+                        <pron notation="ipa" corresp="#animal">kì.t̪í</pron>
+                     </form>
+                     <gloss>animal</gloss>
+                  </cit>
+                  <note>The term comes from the general Mixtepec-Mixtec word for 'animal', it is
+                     clearly derrived from the fact that when they encountered horses and the
+                     Spanish for the first time (sometime after 1517), they also encountered horses
+                     for the first time for which there was no word in the language. They refered to
+                     them simply as 'animal' and this use lexicalized in the language.</note>
+               </etym>
+               <cit type="translation" xml:lang="en">
+                  <oRef>horse</oRef>
+               </cit>
+               <cit type="translation" xml:lang="es">
+                  <oRef>caballo</oRef>
+               </cit>
+            </sense>
+         </entry>
+         <!-- GRAMMATICALIZATION -->
+         <!-- Chronological Ordering of Etymological Attestations -->
+         <entry xml:id="besides" xml:lang="en">
+            <form type="lemma">
+               <orth>besides</orth>
+               <gramGrp>
+                  <pos>discourseMarker</pos>
+               </gramGrp>
+            </form>
+            <sense><!-- sense info here -->
+               <etym type="grammaticalization">
+                  <cit type="etymon" xml:id="at-850-950" next="#at-1225-a">
+                     <date notBefore="0850" notAfter="0950"/>
+                     <form>
+                        <orth xml:lang="ang">sidan</orth>
+                     </form>
+                     <gloss>side</gloss>
+                     <gramGrp><!-- inherantly applies to the top level structure -->
+                        <pos>locativeNoun</pos>
+                     </gramGrp>
+                     <cit type="component" corresp="#e1s1">
+                        <!-- subtype="head" -->
+                        <gramGrp>
+                           <pos>noun</pos>
+                        </gramGrp>
+                     </cit>
+                     <cit type="component" corresp="#e1s2">
+                        <gramGrp>
+                           <case>dative</case>
+                        </gramGrp>
+                     </cit>
+                     <cit type="attestation" xml:lang="ang">
+                        <quote>&amp; þonne licge on Da swiDran <oRef>sidan</oRef> gode hwile</quote>
+                        <cit type="translation" xml:lang="en">
+                           <quote>and then lie on the right side good while</quote>
+                        </cit>
+                     </cit>
+                     <bibl>(850-950 Lacnunga Magicand&amp;Med., p. 120 [HC])</bibl>
+                  </cit>
+                  <!-- 1225-a is a dative noun; 1225-b is an adverbial in which the dative is used but functions  -->
+                  <cit type="etymon" xml:id="at-1225-a" prev="#at-850-950" next="#at-1225-b">
+                     <date when="1225"/>
+                     <form>
+                        <orth xml:lang="ang">bi-siden</orth>
+                     </form>
+                     <gloss>at his side</gloss>
+                     <gramGrp><!-- inherantly applies to the top level structure -->
+                        <pos>locativeAdverbial</pos>
+                     </gramGrp>
+                     <cit type="component" corresp="#e2s1">
+                        <gramGrp>
+                           <pos>adverb</pos>
+                        </gramGrp>
+                     </cit>
+                     <cit type="component" corresp="#e2s2">
+                        <gramGrp>
+                           <pos>noun</pos>
+                        </gramGrp>
+                     </cit>
+                     <cit type="component" corresp="#e2s3">
+                        <gramGrp>
+                           <case>dative</case>
+                        </gramGrp>
+                     </cit>
+                     <cit type="attestation" xml:lang="ang">
+                        <quote>His pic he heold <oRef>bi-siden</oRef>
+                        </quote>
+                        <cit type="translation" xml:lang="en">
+                           <quote>He held his staff at his side</quote>
+                        </cit>
+                     </cit>
+                     <bibl>(1225 Lay. Brut 30784 [MED])</bibl>
+                  </cit>
+                  <cit type="etymon" xml:id="at-1225-b" prev="#at-1225-a" next="#at-c1300">
+                     <date when="1225"/>
+                     <form>
+                        <orth xml:lang="enm">bi-siden</orth>
+                     </form>
+                     <gloss>in addition</gloss>
+                     <gramGrp>
+                        <pos>conjunctiveAdverbial</pos>
+                     </gramGrp>
+                     <cit type="component" corresp="#e3s1">
+                        <gramGrp>
+                           <pos>preposition</pos>
+                        </gramGrp>
+                     </cit>
+                     <cit type="component" corresp="#e3s2">
+                        <gramGrp>
+                           <pos>nominalAdposition</pos>
+                        </gramGrp>
+                     </cit>
+                     <cit type="component" corresp="#e3s3">
+                        <gramGrp>
+                           <case>dative</case>
+                        </gramGrp>
+                     </cit>
+                     <cit type="attestation" xml:lang="ang">
+                        <quote>Heo letten forD <oRef>bi-siden</oRef> an oþer folc riden, ten þusend
+                           kempen</quote>
+                        <cit type="translation" xml:lang="en">
+                           <quote>They sent another army forth in addition, 10,000 warriors</quote>
+                        </cit>
+                     </cit>
+                     <bibl>(1225 Lay Brut 5498 [MED])</bibl>
+                  </cit>
+                  <cit type="etymon" xml:id="at-c1300" prev="#at-1225-b" next="#at-1450">
+                     <date cert="medium" when="1300"/>
+                     <form>
+                        <orth xml:lang="enm">biside</orth>
+                     </form>
+                     <!-- in the source 'bi-' is represented as (possibly lexicalized?) part of word, functioning as adverb-->
+                     <gloss>nearby</gloss>
+                     <gramGrp>
+                        <pos>locativeAdverbial</pos>
+                     </gramGrp>
+                     <cit type="attestation" xml:lang="ang">
+                        <quote>þe barons astunte wiþoute toun <oRef>biside</oRef> &amp; vaire sende
+                           in to þe toun to þe king hor sonde</quote>
+                        <cit type="translation" xml:lang="en">
+                           <quote>the barons stood outside the town nearby and duly sent in to the
+                              town to the king their messenger</quote>
+                        </cit>
+                     </cit>
+                     <bibl>(c. 1300 Robert of Gloucester, p. 748 [HC])</bibl>
+                  </cit>
+                  <cit type="etymon" xml:id="at-1450" prev="#at-c1300" next="#at-1514-1518">
+                     <date notAfter="1449"/>
+                     <form>
+                        <orth xml:lang="enm">be-syde</orth>
+                     </form>
+                     <gloss>in addition to</gloss>
+                     <gramGrp>
+                        <gram>prepositionPhrase</gram>
+                        <!-- Traugott: new sense -->
+                     </gramGrp>
+                     <cit type="component" corresp="#e5s1">
+                        <gramGrp>
+                           <pos>preposition</pos>
+                        </gramGrp>
+                     </cit>
+                     <cit type="component" corresp="#e5s2">
+                        <gramGrp>
+                           <pos>noun</pos>
+                        </gramGrp>
+                     </cit>
+                     <cit type="attestation" xml:lang="enm">
+                        <quote>..and <oRef>be-syde</oRef> thise ther be in that cerkyl pale spottys,
+                           or yewlu ...</quote>
+                        <cit type="translation" xml:lang="en">
+                           <quote>.. and in addition to this there are in that circle spots that are
+                              pale, or yellow...</quote>
+                        </cit>
+                     </cit>
+                     <bibl>(bef. 1450 Metham, p.127 [HC])</bibl>
+                  </cit>
+                  <!-- Stage I-->
+                  <cit type="etymon" xml:id="at-1514-1518" prev="#at-1450" next="#at-1535-1543">
+                     <date notBefore="1514" notAfter="1518"/>
+                     <form>
+                        <orth xml:lang="en">beside</orth>
+                     </form>
+                     <!-- 14 -18 ys after iso cutoff for middle engl!? need Early Modern iso 639-id -->
+                     <gramGrp>
+                        <pos>extensionAdverb</pos>
+                        <!-- aka 'conjunctiveAdverbial' -->
+                     </gramGrp>
+                     <cit type="attestation">
+                        <!-- early modern english -->
+                        <quote>In whiche albeit thei ment as muche honor to hys grace as wealthe to
+                           al the realm <oRef ana="OBLQ">beside</oRef>, yet were they not sure howe
+                           hys grace woulde take it,...</quote>
+                        <!-- @ana="OBLQ" stands for "oblique" usage of item in information structure  -->
+                     </cit>
+                     <bibl>(1514-18 More, History of Richard III, p. 78)</bibl>
+                  </cit>
+                  <!-- this next step is actually due to metaphor (domain SPACE > domain DISCOURSE) -->
+                  <!-- alternative encoding could have this etymon encased in <etym type="metaphor">; -->
+                  <cit type="etymon" xml:id="at-1535-1543" prev="#at-1514-1518" next="#at-1567">
+                     <date notBefore="1535" notAfter="1543"/>
+                     <form>
+                        <orth xml:lang="emodeng">beside</orth>
+                     </form>
+                     <gramGrp>
+                        <pos>extensionAdverb</pos>
+                     </gramGrp>
+                     <cit type="attestation">
+                        <quote>The toune of Chester is chiefly one streate of very meane building yn
+                           lenght: ther is <oRef>beside</oRef> a smaul streat or 2. about the
+                           chirch; that is collegiatid, .... </quote>
+                     </cit>
+                     <bibl>(1535-43 Leland, Itinerary I p. 74 [HC])</bibl>
+                  </cit>
+                  <!-- Stage II: Sentential Adverb -->
+                  <!-- alternative encoding could have this etymon formally pointing to the previous sense in <etym type="metaphor">; <sRef> -->
+                  <cit type="etymon" xml:id="at-1552-1563" prev="#at-1535-1543" next="#at-1554">
+                     <date notBefore="1552" notAfter="1563"/>
+                     <form>
+                        <orth xml:lang="emodeng">besides</orth>
+                     </form>
+                     <!--  -->
+                     <gramGrp>
+                        <pos>sententialAdverb</pos>
+                     </gramGrp>
+                     <cit type="attestation">
+                        <quote>Tolde he not you <seg ana="#Compilmentizer">that</seg>
+                           <oRef>besides</oRef> she stole your Cocke that tyde?</quote>
+                     </cit>
+                     <note>The extensionAdverb signaling extension of a list of referents
+                        illustrated in (sense in example <ref target="#at-1535-1543"/>) is
+                        presumably the source of the clause-initial, focused IPAdv, which extends
+                        the propositional content with additional, non- central material:</note>
+                     <bibl>(1552-63 Gammer Gurton, p. 61 [HC])</bibl>
+                  </cit>
+                  <!-- decision in ordering the former and the next example is arbitrary because the previous is only given a range of dates-->
+                  <cit type="etymon" xml:id="at-1554" prev="#at-1552-1563" next="#stage3-26a">
+                     <date when="1554"/>
+                     <form>
+                        <orth xml:lang="emodeng">besides</orth>
+                     </form>
+                     <!-- should be Early Modern Engl (no iso 639 code) -->
+                     <gramGrp>
+                        <pos>discourseMarker</pos>
+                     </gramGrp>
+                     <cit type="attestation">
+                        <quote>...<seg ana="#LPeriph">And <oRef>besides</oRef>
+                           </seg>, it is very unlike, that </quote>
+                     </cit>
+                     <bibl>(bef. 1554 Trial Throckmorton I,66.C1 [HC])</bibl>
+                  </cit>
+                  <cit type="etymon" xml:id="at-1567" prev="#at-1554" next="#at-1619">
+                     <date when="1567"/>
+                     <form>
+                        <orth xml:lang="emodeng">besides</orth>
+                     </form>
+                     <gramGrp>
+                        <pos>extensionAdverb</pos>
+                     </gramGrp>
+                     <cit type="attestation">
+                        <quote>... as I shall aunswere before god, one of them told me
+                              <oRef>besides</oRef> that you were godfather to him, and
+                           that...</quote>
+                     </cit>
+                     <bibl>(1567 Harman Caveat p. 40 [HC])</bibl>
+                  </cit>
+                  <cit type="etymon" xml:id="at-1619" prev="#at-1554" next="#at-1872">
+                     <date when="1619"/>
+                     <form>
+                        <orth xml:lang="en">beside</orth>
+                     </form>
+                     <gramGrp>
+                        <pos>discourseMarker</pos>
+                     </gramGrp>
+                     <cit type="attestation">
+                        <quote>...and <oRef>beside</oRef>, my complexion is so blacke, that...
+                        </quote>
+                     </cit>
+                     <bibl>(1619 Deloney, Jack of Newbury, p.70 [HC])</bibl>
+                  </cit>
+                  <!-- occurs in left periphery of sentence -->
+                  <cit type="etymon" xml:id="at-1872" prev="#at-1619">
+                     <date when="1872"/>
+                     <form>
+                        <orth xml:lang="en">besides</orth>
+                     </form>
+                     <gramGrp>
+                        <pos>discourseMarker</pos>
+                     </gramGrp>
+                     <cit type="attestation">
+                        <quote>... <oRef>besides</oRef> if you put a trusty female at
+                           Ravenscroft....</quote>
+                     </cit>
+                     <bibl>(1872 Amberley Ltrs, p. 513 [CLME])</bibl>
+                  </cit>
+                  <bibl>(Traugott, 1995)</bibl>
+               </etym>
+            </sense>
+         </entry>
+
+
+
+         <!-- 
+        Eingang m. 
+        mhd. īnganc, nnl. ingang, dän. indgang, schwed. ingång: Lehnübersetzung des lat. introitus.
+
+Aus dem ‘Hineingehen’ als Handlung ist die ‘Stelle, an der man ins Haus, in den Saal geht’ geworden, neuerdings auch die ‘Gesamtheit der eingegengenen Geschäftssachen, Mannschaften’ usw. Vgl. Zugang.
+(Kluge, 1975)p159      
+        -->
+         <!-- Flat structure, no @type -->
+         <entry xml:id="Eingang">
+            <form type="lemma">
+               <orth>Eingang</orth>
+            </form>
+            <gramGrp>
+               <pos>noun</pos>
+               <gen>masc</gen>
+            </gramGrp>
+            <etym>
+               <lang>mhd.</lang>
+               <cit type="etymon">
+                  <form>
+                     <orth xml:lang="gmh">īnganc</orth>
+                  </form>
+               </cit>
+               <cit type="cognate">
+                  <lang expand="neuniederländisch">nnl.</lang>
+                  <form>
+                     <orth>ingang</orth>
+                  </form>
+               </cit>
+               <cit type="cognate">
+                  <lang>dän.</lang>
+                  <form>
+                     <orth xml:lang="da">indgang</orth>
+                  </form>
+               </cit>
+               <cit type="cognate">
+                  <lang>schwed.</lang>
+                  <form>
+                     <orth xml:lang="sv">ingång</orth>
+                  </form>
+               </cit>
+               <seg type="desc">Lehnübersetzung des <lang expand="Latin">lat.</lang></seg>
+               <cit type="etymon">
+                  <form>
+                     <orth xml:lang="la">introitus</orth>
+                  </form>
+               </cit>
+               <seg type="desc">Aus dem ‘Hineingehen’ als Handlung ist die ‘Stelle, an der man ins
+                  Haus, in den Saal geht’ geworden, neuerdings auch die ‘Gesamtheit der
+                  eingegengenen Geschäftssachen, Mannschaften’ usw. Vgl. <oRef>Zugang</oRef>.
+                     <bibl>(Kluge, 1975) p159</bibl>
+               </seg>
+            </etym>
+         </entry>
+
+         <!-- 
+        Eingang m. 
+        mhd. īnganc, nnl. ingang, dän. indgang, schwed. ingång: Lehnübersetzung des lat. introitus.
+
+Aus dem ‘Hineingehen’ als Handlung ist die ‘Stelle, an der man ins Haus, in den Saal geht’ geworden, neuerdings auch die ‘Gesamtheit der eingegengenen Geschäftssachen, Mannschaften’ usw. Vgl. Zugang.
+(Kluge, 1975)p159      
+        -->
+         <!-- fully encoded w/ single layer embedding -->
+         <entry xml:id="Eingang">
+            <form type="lemma">
+               <orth>Eingang</orth>
+            </form>
+            <gramGrp>
+               <pos>noun</pos>
+               <gen>masc</gen>
+            </gramGrp>
+            <etym type="borrowing" subtype="calque">
+               <etym type="inheritance">
+                  <lang>mhd.</lang>
+                  <cit type="etymon">
+                     <form>
+                        <orth xml:lang="gmh">īnganc</orth>
+                     </form>
+                  </cit>
+               </etym>
+               <cit type="cognate">
+                  <lang expand="neuniederländisch">nnl.</lang>
+                  <form>
+                     <orth>ingang</orth>
+                  </form>
+               </cit>
+               <cit type="cognate">
+                  <lang>dän.</lang>
+                  <form>
+                     <orth xml:lang="da">indgang</orth>
+                  </form>
+               </cit>
+               <cit type="cognate">
+                  <lang>schwed.</lang>
+                  <form>
+                     <orth xml:lang="sv">ingång</orth>
+                  </form>
+               </cit>
+               <seg type="desc">Lehnübersetzung des <lang expand="Latin">lat.</lang></seg>
+               <cit type="etymon">
+                  <form>
+                     <orth xml:lang="la">introitus</orth>
+                  </form>
+               </cit>
+               <seg type="desc">Aus dem ‘Hineingehen’ als Handlung ist die ‘Stelle, an der man ins
+                  Haus, in den Saal geht’ geworden, neuerdings auch die ‘Gesamtheit der
+                  eingegengenen Geschäftssachen, Mannschaften’ usw. Vgl. <oRef>Zugang</oRef>.
+                     <bibl>(Kluge, 1975) p159</bibl>
+               </seg>
+            </etym>
+         </entry>
+
+
+         <!-- CONTRADICTORY ETYMOLOGICAL ATTESTATIONS/DESCRIPTIONS -->
+         <entry xml:id="SCOLD-Skeat">
+            <form type="lemma">
+               <orth>SCOLD</orth>
+            </form>
+            <sense>
+               <def>to chide, rail at.</def>
+               <note>(<lang expand="English">E.</lang>?)</note>
+            </sense>
+            <etym type="inheritance">
+               <cit type="etymon">
+                  <lang expand="Middle English">ME.</lang>
+                  <form>
+                     <orth xml:lang="enm">scolden</orth>
+                  </form>
+                  <bibl>P. Plowman, B. ii. 81;</bibl>
+                  <cit type="example"/>
+                  <cit type="etymon">
+                     <form>
+                        <orth xml:lang="enm">scolde</orth>
+                     </form>
+                     <gramGrp>
+                        <gram type="pos" expand="substantive">sb.</gram>
+                     </gramGrp>
+                  </cit>
+                  <cit type="translation" xml:lang="en">
+                     <!-- this is a translation of contextual usage in present-day english!-->
+                     <form>a scold</form>
+                  </cit>
+                  <bibl>id. xix. 279</bibl>
+               </cit>
+               <etym type="borrowing" cert="unknown">
+                  <seg type="desc">Not in <lang expand="Anglo Saxon">AS.</lang> Hardly an <lang
+                        expand="English">E.</lang> word; perhaps <lang>Frisian</lang>. From the weak
+                     grade <oRef>*skəld</oRef> of the</seg>
+                  <cit type="etymon">
+                     <lang expand="Teutonic">Teut.</lang>
+                     <!-- Indo-Germanic ??? -->
+                     <gramGrp>
+                        <iType>strong</iType>
+                        <gram>verb</gram>
+                     </gramGrp>
+                     <form>
+                        <orth xml:lang="t">*skeldan-</orth>
+                     </form>, <gloss>to scold</gloss>
+                  </cit> (<cit type="etymon"><!-- this is a nominal derrivation of the head etymon! how to encode this? -->
+                     <gramGrp>
+                        <gram type="tense" expand="past tense">pt. t.</gram>
+                     </gramGrp>
+                     <form>
+                        <orth xml:lang="">*skald</orth>
+                     </form>, </cit>
+                  <cit type="etymon">
+                     <!-- how to tag a participle outside of form? -->
+                     <gramGrp>
+                        <gram type="?">pp.</gram>
+                     </gramGrp>
+                     <form>
+                        <orth>*skəld-anoz</orth>
+                     </form>
+                  </cit>). </etym>
+               <seg type="desc">It appears as</seg>
+               <cit type="cognate">
+                  <lang expand="Old Frisian">OFries.</lang>
+                  <form>
+                     <orth xml:lang="ofs">skelda</orth>
+                  </form>
+               </cit>, <cit type="cognate">
+                  <lang expand="Dutch">Du.</lang>
+                  <form>
+                     <orth xml:lang="nl">schelden</orth>
+                  </form>
+               </cit>, <cit type="cognate">
+                  <lang expand="German">G.</lang>
+                  <form>
+                     <orth xml:lang="de">schelten</orth>
+                  </form>, </cit> to scold; <!-- definition 'to scold' applies to all the cognates! (must occur within cognate set)-->
+               <seg type="desc">cf.</seg>
+               <cit type="cognate">
+                  <lang expand="Danish">Dan.</lang>
+                  <gramGrp>
+                     <iType>weak</iType>
+                     <gram type="pos">verb</gram>
+                  </gramGrp>
+                  <form type="variant">
+                     <orth xml:lang="da">skjelde</orth>
+                  </form>, <form type="variant">
+                     <orth xml:lang="da">skœlde</orth>
+                  </form>, <gloss xml:lang="en">to scold</gloss>
+               </cit>. <seg type="desc">Perhaps allied to</seg>
+               <cit type="etymon">
+                  <lang expand="Old Saxon">OSax.</lang>
+                  <form>
+                     <orth xml:lang="osx">scaldan</orth>
+                  </form>, <gloss xml:lang="en" xml:id="OSax-gls">to push off a boat</gloss>
+                  <bibl>(Kluge)</bibl>; </cit>
+               <cit type="etymon">
+                  <lang expand="Old High German">OHG.</lang>
+                  <form>
+                     <orth xml:lang="goh">scaltan</orth>
+                  </form>, the same.
+                  <!-- need to be able to point to and define gloss from above as applying to this! --></cit>
+               <etym type="nominalDerrivation">
+                  <seg type="desc">Der.</seg>
+                  <!-- this is assumedly english!? how/where best to put this?  -->
+                  <cit type="etymon" xml:lang="en">
+                     <form>
+                        <orth>scold</orth>
+                     </form>, <gramGrp>
+                        <gram type="pos" expand="sustantive">sb.</gram>
+                     </gramGrp>, </cit>
+               </etym>
+               <bibl>Tam. Shrew, i. 2. 188</bibl>, and in <bibl>Palsgrave</bibl> and <bibl>P.
+                  Pl.</bibl> (as above); scold-er. <xr>And see scald (3)</xr>. </etym>
+         </entry>
+         <!-- 
+     GIRL, a female child, young woman.
+     (E.) ME. gerle, girle, gyrle, formerly used of either sex, and signifying either a boy or girl.
+     
+     In Chaucer, C.T. 3767 (A 3769) gerl is a young woman; but in C.T. 666 (A 664), the pl. girles means young people of both sexes. 
+     
+     In Will. of Palerne, 816, and King Alisander, 2802, it means 'young women;' in P. Plowman, B. i.33, it means 'boys;' cf. B. x. 175. 
+     
+     Answering to an
+     AS. form *gyr-el-, Teut. *gur-wil-, a dimin. form from Teut. base *gur-. 
+     
+     Cf. NFries. gör, a girl;  Pomeran. goer, a child;
+     O. Low G. gör, a child; see Bremen Wörtebuch, ii. 528.
+     
+     Cf. Swiss gurre, gurrli, a depriciatory term for a girl; Sanders, G. Dict. i. 609, 641; 
+     also Norw. gorre, a small child (Aasen); Swed. dial. gårrä, guerre (the same). Root uncertain. 
+     
+     Der. girl-ish, girl-ish-ly, girl-ish-ness, girl-hood
+
+         -->
+         <!-- DESCENDANTS -->
+         <entry xml:lang="la">
+            <form type="lemma">
+               <orth/>
+            </form>
+            <etym>
+               <cit type="descendent">
+                  <lang/>
+                  <form>
+                     <orth xml:lang=""/>
+                  </form>
+               </cit>
+               <cit type="descendent">
+                  <lang/>
+                  <form>
+                     <orth xml:lang=""/>
+                  </form>
+               </cit>
+               <cit type="descendent">
+                  <lang/>
+                  <form>
+                     <orth xml:lang=""/>
+                  </form>
+               </cit>
+               <bibl>Kent, R. G. (1932). The sounds of Latin. A Descriptive and Historical
+                  phonology. Language, 8(3), 11–216.</bibl>
+            </etym>
+         </entry>
+         <entry>
+            <etym>
+               inherited from Middle English <cit type="etymon">X</cit>
+               from Old English <cit type="etymon">Y</cit>
+               borrowed from Latin <cit type="etymon">Z</cit>
+               which was from the Proto Italic <cit type="etymon">Q</cit>
+               from Proto Indo-European <cit type="etymon">Ʊ</cit>
+            </etym>
+         </entry>
+         
+         <entry>
+            <etym>
+               inherited from Middle English <cit type="etymon">X</cit>
+               <etym>
+                  from Old English <cit type="etymon">Y</cit>
+              <etym> 
+                 borrowed from Latin <cit type="etymon">Z</cit>
+               <etym>
+                  which was from the Proto Italic <cit type="etymon">Q</cit>
+                  <etym>
+                     from Proto Indo-European <cit type="etymon">Ʊ</cit>
+                  </etym>
+               </etym>
+              </etym>
+            </etym>
+            </etym>
+         </entry>
+      </body>
+   </text>
+</TEI>
